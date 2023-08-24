@@ -9,22 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css"
 </head>
 <body>
-<header>
-  <h1>esto</h1>
-  <nav id="nav">
-    <a href="index.html">
-      <img class="imagen-logo" src= "imagenes/c60c97eba10a56280114b19063d04655-icono-redondo-del-aeropuerto-de-avion.png" width="50px"/>
-    </a>
-    <ul id="ul-nav">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="imagenes/c60c97eba10a56280114b19063d04655-icono-redondo-del-aeropuerto-de-avion.png"/>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="contacto.html">Contacto</a></li>
         <li><a href="destinos.html">Destinos</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
-</header>
+      </ul>
+    </nav>
+  </header>
 <main>
 <section>
   <div>
@@ -38,24 +38,21 @@
     <li class="lista-pricipal">Tours gastronómicos</li>
     <li class="lista-pricipal">Fiestas</li>
 </ul>
-<section>
-    <h2 id="destacados">Destacados!</h2>
-    <div>
-    <img class="imagen-central" src="imagenes/cropped-gettyimages-1360554439-3.webp" alt="Caribe" >
-    <img class="imagen-central" src="imagenes/tailandia.jpg" alt="Tailandia" ">
-    <img class="imagen-central" src="imagenes/machupichu.jpg" alt="Machu Pichu" 
-    </div>
-</section>
+
 </main>
-<footer id="footer">
-  <a href="index.html">
-    <img class="imagen-logo" src="imagenes/c60c97eba10a56280114b19063d04655-icono-redondo-del-aeropuerto-de-avion.png" width="50px">
-  </a>
-    <ul>
-      <li><a href="destinos.html">Destinos</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
+<footer class="footer"
+    <div class="contenedor-padre-footer">
+      <div class="palabra-clave">
+        <a href="index.html">Turismo Headway</a>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="js/bootstrap.js"></script>
 </body>

@@ -4,29 +4,89 @@
     padding: 0;
 }
 
-#nav {
+.header {
     background-color: #1c97b0;
-    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 5px 10%;
 }
 
-.imagen-logo{
-    width: 70px;
-    padding: 10px;
-    display: inline;
+.header .logo img {
+    height: 50px;
+    width: auto;
 }
 
-#ul-nav {
-    display: inline;
+
+.header .nav-links{
+    list-style: none;
 }
 
-li {
-    font-size: 30px;
-    list-style-type: none;
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
     text-decoration: none;
-    display: inline;
-    padding: 20px;
-    margin-bottom: 160px;
+    color: black;
 }
+
+.header .nav-links li a:hover{
+    color: aliceblue;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+
+#cont-imag-text {
+    display: flex;
+}
+
+.contenedoresinformacion {
+    display: flex;
+    font-size: 15px;
+    padding: 50px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.texto-lorem {
+    width: 600px;
+    text-align: center;
+    padding-right: 80px;
+}
+
+.imagen-info {
+    width: 350px;
+    height: 200;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #h2entrada {
     font-family: 'Julius Sans One', sans-serif;
@@ -73,6 +133,67 @@ li {
     display: inline;
 }
 
-#footer {
+.footer {
     background-color: #1c97b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    padding: 5px 10%;
+}
+
+.palabra-clave {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+.footer .footer-links li {
+    list-style: none;
+    padding: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+.footer .footer-links li:hover {
+    transform: scale(1.1);
+}
+    
+
+.footer a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+
+}
+
+.footer a:hover{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+.contain {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-body {
+    border-bottom: 500px;
+}
+
+.contain .card:hover {
+    transform: scale(1.1);
+}
+
+.contain .card .card-body {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(15, 106, 226);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
