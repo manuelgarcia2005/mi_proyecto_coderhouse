@@ -1,0 +1,213 @@
+.header {
+  background-color: rgba(5, 79, 94, 0.8431372549);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 5px 10%;
+}
+.header .logo a {
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  color: black;
+}
+.header .logo a:hover {
+  color: aliceblue;
+}
+
+.header li {
+  display: inline-block;
+  background-color: white;
+  border-radius: 6px;
+  padding: 0 20px;
+  margin: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+}
+.header li:hover {
+  transform: scale(1.1);
+}
+.header li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 150px;
+  }
+  .header li {
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+  }
+}
+@media (max-width: 850px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+}
+/*COLOR ORIGINAL background-color: #1c97b0;*/
+/*HOMEPAGE*/
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1560142454-b818f9dd9fe1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZpJUMzJUIzbiUyMHZvbGFuZG98ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+.homepage p {
+  color: black;
+  font-family: "Bodoni Moda", serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .homepage {
+    background-image: url(https://images.unsplash.com/photo-1650399470902-0dd9259b91c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwZGUlMjBhdmlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+    background-size: cover;
+    height: 800px;
+  }
+  .homepage p {
+    font-size: 25px;
+  }
+}
+.div-descripcion {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.div-descripcion .pregunta {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 35%;
+}
+
+.imagen-central {
+  background-color: orange;
+}
+
+@media (max-width: 1150px) {
+  .div-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+  }
+  .div-descripcion .pregunta {
+    background-color: red;
+  }
+  .div-descripcion .pregunta .imagen-central {
+    background-color: yellow;
+  }
+  .div-descripcion .pregunta .imagen-central .descripcion-empresa {
+    background-color: violet;
+  }
+}
+.div-lista {
+  display: grid;
+  place-content: center;
+  align-items: baseline;
+  justify-content: baseline;
+  height: 500px;
+  background-color: red;
+}
+.div-lista ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+  list-style: none;
+}
+
+.video-informativo {
+  height: 500px;
+}
+
+/*PAGINA DE CONTACTO*/
+/*
+PAGINA NOSOTROS
+*/
+.contenedor-info-nosotros {
+  border: 2px solid blue;
+  width: auto;
+  height: 500px;
+  padding: 80px;
+}
+.contenedor-info-nosotros .div-parrafo-nosotros {
+  justify-content: space-between;
+}
+
+/* FOOTER*/
+.footer {
+  background-color: rgba(5, 79, 94, 0.8431372549);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 170px;
+  padding: 5px 10%;
+}
+.footer .palabra-clave {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+.footer .palabra-clave a {
+  text-decoration: none;
+  color: black;
+}
+.footer .palabra-clave a:hover {
+  color: aliceblue;
+}
+
+.footer li {
+  list-style: none;
+  padding: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+.footer li:hover {
+  transform: scale(1.1);
+}
+.footer li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.footer li a:hover {
+  color: aliceblue;
+}
+
+/*
+
+         li {
+            list-style: none;
+            padding: 5px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 20px;
+            &:hover {
+                transform: scale(1.1);
+            }
+            li a {
+                text-decoration: none;
+                color:rgb(0, 0, 0);
+                &:hover {
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+}
+*/
+
+/*# sourceMappingURL=styles.css.map */

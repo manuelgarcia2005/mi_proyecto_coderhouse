@@ -1,0 +1,94 @@
+/*HOMEPAGE*/
+
+.homepage {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1560142454-b818f9dd9fe1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZpJUMzJUIzbiUyMHZvbGFuZG98ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+    p {
+        color: black;
+        font-family: 'Bodoni Moda', serif;
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width:700px){
+    .homepage {
+        background-image: url(https://images.unsplash.com/photo-1650399470902-0dd9259b91c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwZGUlMjBhdmlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+        background-size: cover;
+        height: 800px;
+        p {
+            font-size: 25px;
+        }
+    }
+}
+ 
+
+.div-descripcion {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    .pregunta {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 35%;
+    }
+}
+
+.imagen-central {
+    background-color: orange;
+}
+
+
+@media (max-width:1150px){
+    .div-descripcion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 800px;
+        .pregunta {
+            background-color: red;
+            .imagen-central {
+                background-color: yellow;
+                .descripcion-empresa{
+                    background-color: violet;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.div-lista {
+    display: grid;
+    place-content: center;
+    align-items: baseline;
+    justify-content: baseline;
+    height: 500px;
+    background-color: red;
+     ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: baseline;
+        list-style: none;
+        
+     }
+}
+
+.video-informativo {
+    height: 500px;
+}
